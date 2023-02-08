@@ -1,1 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name = "description" content = "List of Deities.">
+    <link rel="shortcut icon" href="images/favicon.png">
 
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href = "css/Styles.css" rel = "stylesheet" />
+
+    <title>Index of Items</title>
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-primary"> 
+        <script src="js/Navbar.js" class="noParent"></script>
+    </nav>
+
+    <div class="container">
+      <div class="row align-items-top">
+        <div id = "header" class = "col-12">
+          <h1>Reflection Demo</h1><br>
+        </div>
+
+        <div id = "ReflectionDemo" class = " bg-UP-purple color-UP-black col-sm-12 d-flex flex-column">
+            <div class="slidecontainer">
+              <input type="range" min="-90" max="90" value="0" class="slider" id="myRange">
+              <h1 class = "h1L">90</h1>
+              <h1 class = "h1C">0</h1>
+              <h1 class = "h1R">90</h1>
+              <p>Value: <span id="demo"></span></p>
+            </div>
+        </div>
+      
+        <div id = "footer" class = "col-12">
+          <h6>Copyright &copy; Vi Snyder 2023</h6>
+        </div>
+      </div>
+	</div>
+
+     <!-- Bootstrap JavaScript Components-LOAD LAST -->
+     <script scr="js/scripts.js"></script>
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="js/slider.js"></script>
+  </body>
+</html>
