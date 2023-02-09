@@ -112,8 +112,8 @@ p
 
 #laser
 {
-    height: 360px;
-    width: 80px;
+    height: 356px; 
+    width: 16px; 
     margin-bottom: 50px;
     margin-top: -70px;
     display: block;
@@ -121,8 +121,8 @@ p
 
 #laserBeamL, #laserBeamR
 {
-    height: 360px;
-    width: 80px;
+    height: 356px;
+
     margin-bottom: 50px;
     margin-top: -70px;
     display: block;
@@ -166,16 +166,6 @@ p
 .navbar-nav .nav-link.active, .nav-link
 {
     color: #0d6efd;
-}
-
-.hide
-{
-    display: none !important;
-}
-
-.unhide
-{
-    display: block;
 }
 
 .slider 

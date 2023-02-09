@@ -19,16 +19,16 @@ function adjustRotation(newAngle)
 
   if(newAngle > 0)
   {
-    laserBeamL.setAttribute("class", "hide");
-    laserBeamR.setAttribute("class", "unhide center");
+    laserBeamL.setAttribute("class", "invisible");
+    laserBeamR.setAttribute("class", "visible center");
     laserBeamR.style.transform = "rotate(" + (-newAngle) + "deg)";
     //Activate Right Lazer and turn
   }
 
   if(newAngle < 0)
   {
-    laserBeamR.setAttribute("class", "hide");
-    laserBeamL.setAttribute("class", "unhide center");
+    laserBeamR.setAttribute("class", "invisible");
+    laserBeamL.setAttribute("class", "visible center");
     laserBeamL.style.transform = "rotate(" + (-newAngle) + "deg)";
     //Activate Left lazer and turn
   }
