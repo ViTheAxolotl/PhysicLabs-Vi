@@ -115,16 +115,15 @@ p
     height: 356px; 
     width: 16px; 
     margin-bottom: 50px;
-    margin-top: -70px;
+   /*margin-top: -70px;*/
     display: block;
 }
 
 #laserBeamL, #laserBeamR
 {
     height: 356px;
-
     margin-bottom: 50px;
-    margin-top: -70px;
+    /*margin-top: -70px;*/
     display: block;
 }
 
