@@ -61,9 +61,28 @@ body
     text-align: center;
 }
 
+.center
+{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 p
 {
     text-indent: 30px;
+}
+
+#mirror
+{
+    background-color: aquamarine;
+    height: 10px;
+    margin-top: 50px;
+    width: 50%;
+}
+
+#sliderAndLabels
+{
+    width: 75%;
 }
 
 .h1L, .h1C, .h1R
@@ -78,14 +97,49 @@ p
 
 .h1C
 {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10px;
 }
 
 .h1L
 {
     float: left;
 }
+
+#lasersRow
+{
+    width: 80%;
+}
+
+#laser
+{
+    height: 360px;
+    width: 80px;
+    margin-bottom: 50px;
+    margin-top: -70px;
+    display: block;
+}
+
+#laserBeamL, #laserBeamR
+{
+    height: 360px;
+    width: 80px;
+    margin-bottom: 50px;
+    margin-top: -70px;
+    display: block;
+}
+
+#laserBeamR
+{
+    float: left;
+    padding-right: 40px;
+}
+
+#laserBeamL
+{
+    float: right;
+    padding-left: 40px;
+}
+
 
 #ReflectionDemo, #header, #footer
 {
@@ -116,7 +170,7 @@ p
 
 .hide
 {
-    display: none;
+    display: none !important;
 }
 
 .unhide
@@ -144,7 +198,7 @@ p
     width: 25px;
     height: 25px;
     border-radius: 50%; 
-    background: #058edd;
+    background: #A80000;
     cursor: pointer;
 }
   
@@ -153,7 +207,7 @@ p
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #058edd;
+    background: #A80000;
     cursor: pointer;
 }
 
@@ -214,5 +268,17 @@ p
     .col-md-6  
     {
         width: 100%;
+    }
+
+    #mirror
+    {
+        width: 80%
+    }
+
+    #laser, #laserBeamL, #laserBeamR
+    {
+        height: 216px;
+        width: 48px;
+        margin-top: -50px;
     }
 }
