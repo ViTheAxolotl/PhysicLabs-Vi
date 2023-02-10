@@ -1,6 +1,6 @@
 body
 {
-    background: url(../images/background.jpg) black;
+    background: url(../images/background.jpg) black; /*Sets the background bricks*/
 }
 
 .bg-UP-purple
@@ -35,13 +35,13 @@ body
 
 .color-UP-black
 {
-    color: #000000;
+    color: #000;
 }
 
 #header
 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 20px; /*Creates white space from the header and the top of the page*/
     background-color: #AD9622;
     color: #510086;
 }
@@ -49,19 +49,19 @@ body
 #footer
 {
     text-align: center;
-    padding-bottom: 10px;
-    margin: 20px 0px;
+    padding-bottom: 10px; /*Creates white space from the text in the footer and the bottom of the footSer*/
+    margin: 20px 0px; /*Creates white space from the top and bottom of the footer*/
     background-color: #AD9622;
     color: #510086;
 }
 
-#ReflectionDemo
+#ReflectionDemo, #info
 {
     margin-top: 20px;
     text-align: center;
 }
 
-.center
+.center /*Class centers elements*/
 {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -69,15 +69,14 @@ body
 
 p
 {
-    text-indent: 30px;
+    text-indent: 30px; /*Addes indent to the begining text*/
 }
 
 #mirror
 {
     background-color: aquamarine;
     height: 10px;
-    margin-top: 50px;
-    width: 50%;
+    width: 50%; /*Makes the width of the mirror half of the div's width*/
 }
 
 #sliderAndLabels
@@ -85,65 +84,34 @@ p
     width: 75%;
 }
 
-.h1L, .h1C, .h1R
+.labels
 {
-    display: inline-block;
+    width: 100%;
+    display: flex; /*Creates the flex container*/
+    justify-content: space-between; /*Makes the elements in the container equal in space*/
 }
 
-.h1R
+.label
 {
-    float: right;
+    position: relative; /*Allows the elements to be equally spaced*/
 }
 
-.h1C
+#reflections
 {
-    margin-left: 10px;
+    height: 468px;
+    width: 297px;
+    margin-top: -2px;
 }
 
-.h1L
-{
-    float: left;
-}
-
-#lasersRow
-{
-    width: 80%;
-}
-
-#laser
-{
-    height: 356px; 
-    width: 16px; 
-    margin-bottom: 50px;
-   /*margin-top: -70px;*/
-    display: block;
-}
-
-#laserBeamL, #laserBeamR
-{
-    height: 356px;
-    margin-bottom: 50px;
-    /*margin-top: -70px;*/
-    display: block;
-}
-
-#laserBeamR
-{
-    float: left;
-    padding-right: 40px;
-}
-
-#laserBeamL
-{
-    float: right;
-    padding-left: 40px;
-}
-
-
-#ReflectionDemo, #header, #footer
+#ReflectionDemo, #header, #footer, #info
 {
     border: #555555 4px solid;
     padding: 10px 10px 0px 10px;
+}
+
+.navbar
+{
+    border: #000 4px solid;
 }
 
 .nav-item
@@ -151,38 +119,36 @@ p
     text-align: center;
 }
 
-.navbar-primary .navbar-toggler-icon 
+.navbar-primary .navbar-toggler-icon /*Sets the 3 dashes in the navbar*/
 {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(81,0,134, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
   
-.navbar-primary .navbar-toggler 
+.navbar-primary .navbar-toggler /*Adds the color to the border of dashes*/
 {
     border-color: #510086; 
     width: 56px;
 } 
 
-.navbar-nav .nav-link.active, .nav-link
+.navbar-nav .nav-link.active, .nav-link /*Makes the links blue when active*/
 {
     color: #0d6efd;
 }
 
 .slider 
 {
-    -webkit-appearance: none;
+    -webkit-appearance: none; /*Removes the basic slider*/
     width: 100%;
     height: 15px;
     border-radius: 5px;  
-    background: #cebcc8;
+    background: #cebcc8; 
     outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+    opacity: 0.7; /*Makes some of the purple come through it*/
 }
   
-  .slider::-webkit-slider-thumb 
+.slider::-webkit-slider-thumb 
 {
-    -webkit-appearance: none;
+    -webkit-appearance: none; /*Removes the basic circle*/
     appearance: none;
     width: 25px;
     height: 25px;
@@ -190,17 +156,8 @@ p
     background: #A80000;
     cursor: pointer;
 }
-  
-  .slider::-moz-range-thumb 
-{
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: #A80000;
-    cursor: pointer;
-}
 
-@media (max-width: 1399px) 
+@media (max-width: 1399px) /*When screensize is less than 1399pxs*/
 {
     .col-md-6
     {
@@ -213,7 +170,7 @@ p
     }
 }
 
-@media (max-width: 1199px) 
+@media (max-width: 1199px) /*When screensize is less than 1199pxs*/
 {
     .col-md-6
     {
@@ -264,10 +221,9 @@ p
         width: 80%
     }
 
-    #laser, #laserBeamL, #laserBeamR
+    #reflections /*Shrinks reflection image*/
     {
-        height: 216px;
-        width: 48px;
-        margin-top: -50px;
+        height: 312px;
+        width: 198px;
     }
 }
