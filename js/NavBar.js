@@ -6,4 +6,4 @@ document.write(
             '<li class="nav-item"><a class="nav-link active" aria-current="page" href="refractionDemo.html">Reflaction Demo</a></li>' + 
         '</ul>' +
     '</div>' +
-'</div>'); 
+'</div>');
