@@ -96,17 +96,27 @@ p
     position: relative; /*Allows the elements to be equally spaced*/
 }
 
+#ReflectionDemo, #header, #footer, #info, #refractions
+{
+    border: #555555 4px solid;
+    padding: 10px 10px 0px 10px;
+}
+
 #reflections
 {
     height: 468px;
     width: 297px;
     margin-top: -2px;
+    padding: 0px;
 }
 
-#ReflectionDemo, #header, #footer, #info
+#refractions
 {
-    border: #555555 4px solid;
-    padding: 10px 10px 0px 10px;
+    height: 422px;
+    width: 326px;
+    background-color: white;
+    padding: 0px;
+    margin-bottom: 10px;
 }
 
 .navbar
